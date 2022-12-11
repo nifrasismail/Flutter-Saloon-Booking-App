@@ -13,4 +13,4 @@ Flutter 3.3.9
 
 **UI Credit**
 
-Design made by by simantOo [link](https://www.uplabs.com/posts/salon-booking-app-19c14cba-d00d-4937-a062-cf7c6e16113f)
+Design made by simantOo [link](https://www.uplabs.com/posts/salon-booking-app-19c14cba-d00d-4937-a062-cf7c6e16113f)
