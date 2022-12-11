@@ -5,6 +5,7 @@ Flutter 3.3.9
 **Packages used here:**
 
 [flutter_svg](https://pub.dev/packages/flutter_svg) 
+
 [go_flutter](https://pub.dev/packages/go_router) 
 
 **Fonts**
