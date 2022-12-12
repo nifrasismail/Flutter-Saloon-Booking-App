@@ -22,3 +22,4 @@ const headingTextStyle = TextStyle(
   fontSize: 24.0,
   fontWeight: FontWeight.w700,
 );
+

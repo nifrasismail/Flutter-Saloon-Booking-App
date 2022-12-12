@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:saloon_booking_app/screens/detail_screen.dart';
-import 'package:saloon_booking_app/screens/home_screen.dart';
 import 'package:saloon_booking_app/theme.dart';
 
 import 'package:saloon_booking_app/router.dart';

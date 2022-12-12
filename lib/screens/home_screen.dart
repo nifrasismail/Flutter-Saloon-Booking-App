@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final stylists = <Stylist>[
       Stylist('Cameron Jones', 'Super Cut Salon', '4.89', 'man-0.png'),
-      Stylist('Max Robertson', 'Rosano Ferrite Salon', '4.89', 'man-1.png'),
+      Stylist('Max Robertson', 'Rosano Ferrite Salon', '4.89', 'man-0.png'),
       Stylist('Bath Watson', 'Navil Hair & Beauty', '4.7', 'man-2.png'),
     ];
     return Scaffold(

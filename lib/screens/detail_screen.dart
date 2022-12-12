@@ -36,7 +36,7 @@ class DetailScreen extends StatelessWidget {
             child: InkWell(
               onTap: () => context.pop(),
               child: Padding(
-                padding: EdgeInsets.all(defaultPadding),
+                padding: const EdgeInsets.all(defaultPadding),
                 child: SvgPicture.asset('assets/icons/arrow-left.svg',
                     fit: BoxFit.fill),
               ),
@@ -46,6 +46,9 @@ class DetailScreen extends StatelessWidget {
             margin: const EdgeInsets.only(top: 232),
             decoration: const BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(defaultPadding * 1.5),
+              ),
             ),
           ),
           Padding(
@@ -62,11 +65,18 @@ class DetailScreen extends StatelessWidget {
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 5),
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFFFF0EB),
-                        borderRadius: BorderRadius.all(
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFF0EB),
+                        borderRadius: const BorderRadius.all(
                           Radius.circular(defaultPadding / 2),
                         ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            blurRadius: 10,
+                            offset: const Offset(4, 8),
+                          )
+                        ],
                       ),
                       width: 120,
                       height: 160,
@@ -176,7 +186,34 @@ class DetailScreen extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 210, right: 24),
+            child: Align(
+              alignment: Alignment.topRight,
+              child: Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(48),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      blurRadius: 4,
+                      offset: Offset(4, 8),
+                    )
+                  ],
+                ),
+                child: SvgPicture.asset(
+                  'assets/icons/heart.svg',
+                  fit: BoxFit.scaleDown,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
